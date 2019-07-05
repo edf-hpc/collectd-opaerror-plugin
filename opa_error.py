@@ -61,7 +61,7 @@ def run(cmd, exit_on_error=True):
 def opaextracterror():
 
     metric = {}
-    cmd = '/usr/sbin/opaextracterror -M'
+    cmd = '/usr/sbin/opareport -o comps -s -x -d 10 -M | /usr/sbin/opaxmlextract -d \; -e NodeDesc -e SystemImageGUID -e PortNum -e LinkSpeedActive -e LinkWidthDnGradeTxActive -e LinkWidthDnGradeRxActive -e LinkQualityIndicator -e RcvSwitchRelayErrors -e LocalLinkIntegrityErrors -e RcvErrors -e ExcessiveBufferOverruns -e FMConfigErrors -e LinkErrorRecovery -e LinkDowned -e UncorrectableErrors -e RcvConstraintErrors -e XmitConstraintErrors -e XmitDiscards -e RcvRemotePhysicalErrors -s Neighbor -s SMs'
     retcode, output, error = run(cmd)
 
     output = output.split('\n')
