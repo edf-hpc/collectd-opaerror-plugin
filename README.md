@@ -44,7 +44,7 @@ Make sure to adjust the `ModulePath` value.
 See bellow description of thresolds collected by this plugin:
 
 Errors: Signal Integrity
-	Link Qual Indicator                      LinkQualityIndicator
+    Link Qual Indicator                      LinkQualityIndicator
     Uncorrectable Errors                     UncorrectableErrors
     Link Downed                              LinkDowned
     Rcv Errors                               RcvErrors
